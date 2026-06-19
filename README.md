@@ -8,7 +8,7 @@ In computationally heavy domains, Python 3 is excellent for prototyping but freq
 
 **Polyglot-Agent** eliminates this friction. It acts as an algorithmic co-pilot that actively profiles original code, applies mathematical reductions (e.g., `O(N²)` to `O(1)`), and autonomously generates, compiles, and verifies performant C++ logic.
 
----
+
 
 ## 🏗️ Architecture
 
@@ -33,7 +33,7 @@ The system utilizes an agentic orchestration loop to manage state and prevent co
     └────────────────────────────────────────────────────────┘
 ```
 
----
+
 
 ## 🛠️ Core Concepts Implemented
 
@@ -72,7 +72,7 @@ Hard limits on:
 
 This allows safe local execution of LLM-generated native code.
 
----
+
 
 ## 💻 Local Setup & Execution
 
@@ -96,7 +96,7 @@ Run the orchestrator:
 python main.py
 ```
 
----
+
 
 ## ⚙️ Execution Flow
 
@@ -109,7 +109,7 @@ Upon running, the system will:
 5. If compilation fails, stderr is routed back to the agent for autonomous correction.
 6. Verify the compiled native binary perfectly matches the original Python output.
 
----
+
 
 ## 📁 Repository Structure
 
@@ -123,7 +123,7 @@ polyglot-agent/
 └── agent_sandbox/             # (Auto-generated) Secure execution environment
 ```
 
----
+
 
 ## ⚠️ Security Warning
 
@@ -131,7 +131,7 @@ This framework is designed to execute autonomously generated code.
 
 The local MCP server enforces a strict 2000ms timeout limit, but you should only run this tool inside a trusted environment or Docker container when passing highly unconstrained prompts.
 
----
+
 
 ## 🎯 Project Goals
 
