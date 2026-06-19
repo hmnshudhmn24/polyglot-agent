@@ -1,0 +1,25 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# C++ build artifacts and compiled binaries
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+
+# Local MCP execution sandbox and generated test data
+agent_sandbox/
+
+# IDE and OS generated files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
